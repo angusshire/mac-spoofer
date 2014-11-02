@@ -9,4 +9,4 @@ By default, `changeMACAddress.exe` modifies the MAC address of the network adapt
 
 `changeMACAddress.exe -name <insert name here>`
 
-and the `.exe` will change the MAC address for that device. 
+and the `.exe` will change the MAC address for that adapter. 
