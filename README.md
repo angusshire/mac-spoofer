@@ -1,12 +1,12 @@
 changeMACAddress
 ================
 
-This is a script for changing a MAC address on Windows XP systems or later. 
+This is a script for changing a MAC address on Windows XP or later. 
 
-How to Use
-==========
-By default, changeMACAddress.exe modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
+### How to Use
 
-changeMACAddress.exe -name <insert name here>
+By default, `changeMACAddress.exe` modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
 
-and the adapter will change the MAC address for that device. 
+`changeMACAddress.exe -name <insert name here>`
+
+and the `.exe` will change the MAC address for that device. 
