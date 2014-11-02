@@ -1,7 +1,7 @@
 changeMACAddress
 ================
 
-This is a script for changing a MAC address on Windows XP or later. 
+This is a script for changing a network adapter's MAC address. Support is for Windows XP or later. 
 
 ### How to Use
 
