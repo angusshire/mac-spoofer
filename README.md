@@ -15,6 +15,8 @@ The new MAC addresss of the adapter is pseud-randomly generated, unless specifie
 
 `changeMACAddress -s <address>`
 
+When using the `-s` option, only valid MAC addresses are accepted. Valid MAC addressses are 12 character hexadecimal strings where the second nibble is '2', '6', 'A', or 'E'. e.g., this is a valid MAC Address argument `"AAAAAAAAAAAA"`.
+
 You can combine both the `-n` and `-s` options also:
 
 `changeMACAddress -n <name> -s <address>`
