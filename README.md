@@ -1,17 +1,17 @@
 changeMACAddress
 ================
 
-This is a script for changing a network adapter's MAC address. Support is for Windows Vista or later. As of now it has only been tested on Windows 7. 
+This is a script for changing a network adapter's MAC address. It has only been tested on Windows 7, but should also work for Windows Vista and Windows 8.
 
 ### How to Use
 
-By default, `changeMACAddress.exe` modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
+By default, `changeMACAddress` modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
 
 `changeMACAddress -n <name>`
 
-and the `.exe` will change the MAC address for that adapter.
+and the executable will set the named adapter to the new MAC address.
 
-The new MAC addresss of the adapter is pseud-randomly generated, unless specified. You can use the `-s <address>` to specify a specific address to set the MAC address to, like
+The new MAC addresss of the adapter is pseud-randomly generated, unless specified. You can use the `-s` option to specify a specific address to set the MAC address to, like
 
 `changeMACAddress -s <address>`
 
