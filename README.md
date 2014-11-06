@@ -3,7 +3,7 @@ changeMACAddress
 
 This is a script for changing a network adapter's MAC address. It has only been tested on Windows 7, but should also work for Windows Vista and Windows 8.
 
-### How to Use
+### Usage
 
 By default, `changeMACAddress` modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
 
@@ -15,7 +15,7 @@ The new MAC addresss of the adapter is pseud-randomly generated, unless specifie
 
 `changeMACAddress -s <address>`
 
-When using the `-s` option, only valid MAC addresses are accepted. Valid MAC addressses are 12 character hexadecimal strings where the second nibble is '2', '6', 'A', or 'E'. e.g., this is a valid MAC Address argument `"AAAAAAAAAAAA"`.
+When using the `-s` option, only valid MAC addresses are accepted. Valid MAC addressses are 12 character hexadecimal strings where the second nibble is '2', '6', 'A', or 'E'. e.g., this is a valid MAC Address argument `AAAAAAAAAAAA`.
 
 You can combine both the `-n` and `-s` options also:
 
