@@ -11,7 +11,7 @@ By default, `changeMACAddress` modifies the MAC address of the network adapter t
 
 and the executable will set the named adapter to the new MAC address.
 
-The new MAC addresss of the adapter is pseud-randomly generated, unless specified. You can use the `-s` option to specify a specific address to set the MAC address to, like
+The new MAC addresss of the adapter is pseud-randomly generated, unless specified. You can use the `-s` option to specify a specific address to set the MAC address too, like
 
 `changeMACAddress -s <address>`
 
