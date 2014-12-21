@@ -5,6 +5,10 @@
 #include <string>
 using namespace std;
 
+// Author: 4148
+// Copyright (c) 2014.
+// All rights reserved.
+
 // macro for checking os type
 #if defined(_WIN32) || defined(_WIN64)
 #define isWindows() true
