@@ -1,3 +1,6 @@
+// Copyright (c) 2015 Angus H. (4148)
+// Distributed under the GNU General Public License v3.0 (GPLv3).
+
 #include <windows.h>
 #include <time.h>
 #include <stdio.h>
@@ -64,7 +67,6 @@ wchar_t* get_device_id(IWbemLocator* pLoc, IWbemServices* pSvc, char* name) {
         pSvc->Release();
         exit(1);
     }
-
     // loops through enums
     IWbemClassObject* obj = NULL;
     ULONG numElm;
@@ -105,9 +107,7 @@ void setup_wmi_api(IWbemLocator** ppLoc, IWbemServices** ppSvc) {
 	}
 
     // Connect to the root\CIMV2 namespace with the current user.
-    hr = (*ppLoc)->ConnectServer(
-            BSTR(L"ROOT\\CIMV2"),  //namespace
-            NULL, NULL, NULL, 0, NULL, NULL, ppSvc);
+    hr = (*ppLoc)->ConnectServer(BSTR(L"ROOT\\CIMV2"), NULL, NULL, NULL, 0, NULL, NULL, ppSvc);
     if (FAILED(hr)) {
         printf("Unable to connect to root\\cimv2. Error code = %x.\n", hr);
         (*ppLoc)->Release();
@@ -167,7 +167,7 @@ VariantType* getIWbemClassObjectField(IWbemClassObject* obj, const wchar_t* fiel
 		}
 
 		if (vRet.vt == VT_BSTR) {
-		// prints string using multibyte representation
+		    // prints string using multibyte representation
 			wstring temp(vRet.bstrVal, ::SysStringLen(vRet.bstrVal));
 			rtn->value.bstrVal = ::SysAllocString(vRet.bstrVal);
 			rtn->type = rtn->VT_BSTR;
