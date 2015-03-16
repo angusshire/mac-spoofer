@@ -1,5 +1,4 @@
-changeMACAddress
-================
+# mac-spoofer
 
 This is a script for changing a network adapter's MAC address. It has only been tested on Windows 7, but should also work for Windows Vista and Windows 8.
 
