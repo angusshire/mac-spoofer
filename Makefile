@@ -1,10 +1,10 @@
 default: run
 
-run: changeMACAddress.exe
-	./changeMACAddress
+run: mac-spoofer.exe
+	./mac-spoofer
 
-changeMACAddress.exe: changeMACAddress.cpp
+mac-spoofer.exe: mac-spoofer.cpp
 	g++ -g -o $@ $< -lole32 -lWbemuuid -loleAut32
 
 clean:
-	rm changeMACAddress.exe
+	rm mac-spoofer.exe
