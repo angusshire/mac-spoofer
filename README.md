@@ -1,8 +1,12 @@
 # mac-spoofer
 
-This is a script for changing a network adapter's MAC address. It has only been tested on Windows 7, but should also work for Windows Vista and Windows 8.
+This is a script for spoofing a network adapter's MAC address on Windows Vista/7/8.
 
-### Usage
+### How it Works
+
+
+
+### How to Use
 
 By default, `changeMACAddress` modifies the MAC address of the network adapter that currently has a connection, so make sure you are connected to the internet before it is used. Alternatively, you can specify the name of the adapter you want to change with
 
