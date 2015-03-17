@@ -1,4 +1,4 @@
-// Copyright (c) 2015 Angus H. (4148)
+// Copyright (c) 2014 Angus H. (4148)
 // Distributed under the GNU General Public License v3.0 (GPLv3).
 
 #include <windows.h>
