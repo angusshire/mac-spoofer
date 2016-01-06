@@ -33,5 +33,9 @@ In addition, you can also reset (disable then enable) a specified network adapte
 ### Platforms
 This script supports only Windows 7 64-bit. You can try on other versions of Windows to see if it works. If all else fails, you can change it manually. See this [link](http://www.howtogeek.com/192173/how-and-why-to-change-your-mac-address-on-windows-linux-and-mac/) for how to do so.
 
+If you're on a Mac automating changes to your MAC address can be done with just one line in the terminal: 
+
+`sudo ifconfig en0 ether $(perl -e 'for ($i=0;$i<5;$i++){@m[$i]=int(rand(256));} printf "02:%X:%X:%X:%X:%X\n",@m;') && sudo ifconfig en0 down && sudo ifconfig en0 up`
+
 ### License
 mac-spoof is distributed under the GNU General Public License v3.0 (GPLv3).
